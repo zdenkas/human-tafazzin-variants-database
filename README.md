@@ -13,4 +13,4 @@ Folders:
     * Notebooks also serve as database versioning documentation: at the beginning of each notebook, you will find a description of what changes for that particular version.
 * database_versions:
     * Versions of the database. They contain a timestamp in their name and can be matched to corresponding notebooks with the number before the underscore. (E.g., notebook 0000_xxx.ipynb generated database (excel file) 0000_some-timestamp_Human-TAFAZZIN-Variants-Database.xlsx.)
-    * The latest version is the one with the highest number.
+    * The latest version is the one with the highest number..
