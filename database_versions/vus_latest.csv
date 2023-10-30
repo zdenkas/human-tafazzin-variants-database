@@ -1,4 +1,4 @@
-,Location,Location in  Genome release 37 (hg19),Location in Genome release 38 (hg38),DNA Modifications,Protein or mRNA Variants,References & population frequency,Source,SIFT prediction,PolyPhen2 prediction,Amino acid conservation & comments,Additional variants in other genes,Notes
+,Location,Location in Genome release 37 (hg19),Location in Genome release 38 (hg38),DNA Modifications,Protein or mRNA Variants,References & population frequency,Source,SIFT prediction,PolyPhen2 prediction,Amino acid conservation & comments,Additional variants in other genes,Notes
 0,Exon 1,X:153640193,X:154411856,c.13G>T,p.Val5Leu,gnomad exomes; Ashk Jewish female  5/99652,ClinVar; LMM 2011; GeneDX 2017;  Invitae 2020; Ambry,tolerated; 0.14,0.984,Vertebrates 100% Val;  invertebrates have Ile,,
 1,Exon 1,X:153640197_198,X:154411860_861,c.17_18insA,fs*,Ref. 57,,,,,,Not in ClinVar
 2,Exon 1,X:153640207,X:154411870,c.27C>G,p.Phe9Leu,,ClinVar; Invitae 2020; Ambry 2020,deleterious,benign,vertebrates 100%,,Not in ExAC

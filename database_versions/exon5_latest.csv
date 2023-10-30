@@ -1,4 +1,4 @@
-,Location,Classification,Genome Assembly Release 37,Genome Assembly Release 38,DNA Modifications,Protein or mRNA Variants,References & population frequency,Source,Amino acid conservation & comments,SIFT prediction,PolyPhen2 prediction,Splicing Prediction,Notes
+,Location,Classification,Location in Genome release 37 (hg19),Location in Genome release 38 (hg38),DNA Modifications,Protein or mRNA Variants,References & population frequency,Source,Amino acid conservation & comments,SIFT prediction,PolyPhen2 prediction,Splicing Prediction,Notes
 0,Exon 5,VUS,X:153642485,X:154414148_52,c.418_422del ACAGGinsA,p.Arg142ThrfsX41,ExAC 1/79840; 1 hemizyg (LOW CONFIDENCE),,,,,,Not in ClinVar
 1,Exon 5,VUS,X:153642486,X:154414149,c.419C>T,p.Thr140Ile,Ref. 83,ClinVar Jan 2014,Not all primates,Tolerated; 0.36,0.0,Acceptor much reduced; donor small reduction,VUS; not in ExAC
 2,Exon 5,VUS,X:153642492_95  ,X:154414155_58,c.425_428delGGCA  or  c.419_422delCAGG,p.Arg142ThrfsX41,Ref. 83,ClinVar Feb 2017,Should only manifest in FL variant,,,,Likely path. Var ID 423852; Not in ExAC

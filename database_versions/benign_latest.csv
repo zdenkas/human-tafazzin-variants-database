@@ -1,4 +1,4 @@
-,Location,Location in  Genome release 37 (hg19),Location in Genome release 38 (hg38),DNA Modifications,Protein or mRNA Variants,References & population frequency,Source,Amino acid conservation & comments,SIFT prediction,PolyPhen2 prediction,Splicing prediction,Additional variants in other genes,Notes
+,Location,Location in Genome release 37 (hg19),Location in Genome release 38 (hg38),DNA Modifications,Protein or mRNA Variants,References & population frequency,Source,Amino acid conservation & comments,SIFT prediction,PolyPhen2 prediction,Splicing Prediction,Additional variants in other genes,Notes
 0,5'UTR,X:153640060-153640061,X:154411724-154411725,c.-119 (or '-121_-119) insert/del T,,ExAC 5786/6746 alleles; 3249 homozy; 1111 hemizy,ClinVar,,,,,,Benign
 1,5'UTR,X:153640093,X:154411756,c.-88G > C,,ExAC 28/6688; 13 hemizyg; Ref. 4; Ref. 14,ClinVar Jun 2016,,,,,,
 2,5'UTR,X:153640097 ,X:154411760,c.-84C>G,,,,,,,,,
@@ -85,7 +85,7 @@
 83,Exon 5,X:153642503,X:154414166,c.436G>C,p.Gly146Arg,gnomad exomes;  Eur (non-Finn)  female 1/115266,,,Tolerated; low confidence,benign,,,
 84,Exon 5,X:153642503,X:154414166,c.436G>A,p.Gly146Arg,gnomad exomes; Eur (non-Finn) female 1/115266,,100% primates but missing in Saimiri,Tolerated; low confidence,benign,,,
 85,Exon 5,X:153642504,X:154414167,c.437G>T,p.Gly146Val,"gnomad exomes & genomic;  1 exome, 1 genomic; Afr female 2/129176",,100% in primates except Callicebus,Tolerated; 0.09,0.05,Acceptor minimal improvement;  donor noted reduction,,
-86,Exon 5,X:153642509,X:154414172,c.442G>A,p.Gly148Arg,ExAC 1/76588;  0 hemizyg,,100% primates but missing in Saimiri,All tolerated; 0.03,0.0,Both acceptor and donor scores much reduced,,
+86,Exon 5,X:153642509,X:154414172,c.442G>A,p.Gly148Arg,ExAC 1/76588;  0 hemizyg,,100% primates but missing in Saimiri,All tolerated; 0.03,0,Both acceptor and donor scores much reduced,,
 87,Exon 5,X:153642523,X:154414186,c.456G>C,p.Glu152Asp,gnomad exomes; Eur (non-Finn) female 1/114936,,100% primates but missing in Saimiri & Callithrix,All tolerated; 0.006,0.006,Low acceptor score same;  donor improved,,
 88,intron 5,X:153642528,,c.460+1G>A,,gnomad exomes; Afr female 1/114754,ClinVar,,p.LOF high confidence,,,,
 89,intron 5,X:153642532,,c.460+5G>A,,gnomad exomes; Eur (non-Finn) female 1/114264,,,,,Splicing region,,
