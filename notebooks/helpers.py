@@ -38,3 +38,18 @@ def get_version_number(database_folder='../database_versions'):
     assert version_number == sorted(notebook_prefixes)[-1], f'Version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all the notebooks in this folder, now the highest is {sorted(notebook_prefixes)[-1]} and version_number is {version_number}'
 
     return version_number
+
+def save_output_as_csv(output_path_prefix, 
+                       df_pathogenic, df_benign, df_vus, df_exon5):
+    df_pathogenic.to_csv(output_path_prefix + 'pathogenic.csv', index=False)
+    print(f'Dataframe of shape {df_pathogenic.shape} saved to {output_path_prefix}pathogenic.csv')
+        
+    df_benign.to_csv(output_path_prefix + 'benign.csv', index=False)
+    print(f'Dataframe of shape {df_benign.shape} saved to {output_path_prefix}benign.csv')
+
+    df_vus.to_csv(output_path_prefix + 'vus.csv', index=False)
+    print(f'Dataframe of shape {df_vus.shape} saved to {output_path_prefix}vus.csv')
+
+    df_exon5.to_csv(output_path_prefix + 'exon5.csv', index=False)
+    print(f'Dataframe of shape {df_exon5.shape} saved to {output_path_prefix}exon5.csv')
+    
