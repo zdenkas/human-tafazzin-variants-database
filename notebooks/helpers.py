@@ -5,7 +5,9 @@ import datetime
 def create_database_output_path(folder='../database_versions'):
     version_number = get_version_number()
     output_file_name = create_database_output_file_name(version_number)
-    return os.path.join(folder, output_file_name)
+    output_path = os.path.join(folder, output_file_name)
+    print(f'database output path: {output_path}')
+    return output_path
 
 def create_database_output_file_name(version_number):
     now = str(datetime.datetime.now()).replace(':', '-').replace('.', '-').replace(' ', '-')
