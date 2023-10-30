@@ -5,7 +5,9 @@ import datetime
 def create_database_output_path(folder='../database_versions'):
     version_number = get_version_number()
     output_file_name = create_database_output_file_name(version_number)
-    return os.path.join(folder, output_file_name)
+    output_path = os.path.join(folder, output_file_name)
+    print(f'database output path: {output_path}')
+    return output_path
 
 def create_database_output_file_name(version_number):
     now = str(datetime.datetime.now()).replace(':', '-').replace('.', '-').replace(' ', '-')
@@ -25,7 +27,9 @@ def get_version_number(database_folder='../database_versions'):
     data_suffix = '.xlsx'
     data_prefixes = [file.split('_')[0] for file in database_files if file.endswith(data_suffix)]
     if len(data_prefixes) >= 1:
-        assert version_number > sorted(data_prefixes)[-1], f'version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all database file names {database_folder}, now the highest in that folder is {sorted(data_prefixes)[-1]} and version_number is {version_number}'
+        assert version_number >= sorted(data_prefixes)[-1], f'version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all database file names {database_folder}, now the highest in that folder is {sorted(data_prefixes)[-1]} and version_number is {version_number}'
+        if version_number == sorted(data_prefixes)[-1]:
+            print(f'Dataset with prefix {version_number} already exists -- this notebook will create new dataset with same prefix but new timestamp.')
 
     # check that version_number is the highest in notebooks folder (= current folder)
     notebook_files = os.listdir('.')
