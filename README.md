@@ -1,5 +1,5 @@
 # human-tafazzin-variants-database
-Human Tafazzin Variants Database modifications
+Human Tafazzin Variants Database modifications.
 
 This repository contains Python notebooks, which fix inconsistencies in Human Tafazzin Variants Database and enhances the database with publicaly available data. 
 
