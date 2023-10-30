@@ -1,0 +1,12 @@
+,Location,Classification,Location in Genome release 37 (hg19),Location in Genome release 38 (hg38),DNA Modifications,Protein or mRNA Variants,References & population frequency,Source,Amino acid conservation & comments,SIFT prediction,PolyPhen2 prediction,Splicing Prediction,Notes
+0,Exon 5,VUS,X:153642485,X:154414148_52,c.418_422del ACAGGinsA,p.Arg142ThrfsX41,ExAC 1/79840; 1 hemizyg (LOW CONFIDENCE),,,,,,Not in ClinVar
+1,Exon 5,VUS,X:153642486,X:154414149,c.419C>T,p.Thr140Ile,Ref. 83,ClinVar Jan 2014,Not all primates,Tolerated; 0.36,0.0,Acceptor much reduced; donor small reduction,VUS; not in ExAC
+2,Exon 5,VUS,X:153642492_95  ,X:154414155_58,c.425_428delGGCA  or  c.419_422delCAGG,p.Arg142ThrfsX41,Ref. 83,ClinVar Feb 2017,Should only manifest in FL variant,,,,Likely path. Var ID 423852; Not in ExAC
+3,Exon 5    ,BENIGN,,X:154413944 - 154414116,,,,,,,,,MIR repetitive DNA 173 bp
+4,Exon 5    ,BENIGN,X:153642438 ,X:154414101,c.371G>A,p.Gly124Glu,ExAC  A=0.0000164,,,,,Significantly reduced acceptor score,
+5,Exon 5    ,BENIGN,X:153642450,X:154414113,c.383T>C,p.Phe128Ser,ExAC 521/78935; 98 hemizyg; 9 homozyg,ClinVar 2015,would only affect higher primates,All tolerated; 0.73,0.01,Lousy acceptor improved; donor slight reduction,benign on ClinVar
+6,Exon 5,BENIGN,X:153642472,X:154414135,c.405A>G,p.Lys135=,Ref. 4,,,,,ex5 poor acceptor is worse; donor reduced,
+7,Exon 5,BENIGN,X:153642474,X:154414137,c.407G>T,p.Gly136Val,ExAC 1/80705; 0 hemizyg,,100% conserved in primates,Tolerated; 0.13,0.867,Poor acceptor score reduced; donor some reduction,
+8,Exon 5,BENIGN,X:153642504,X:154414167,c.437G>T,p.Gly146Val,ExAC 1/77810; 0 hemizyg,,100% in primates except Callicebus,Tolerated; 0.09,0.05,Acceptor minimal improvement; donor noted reduction,
+9,Exon 5,BENIGN,X:153642509,X:154414172,c.442G>A,p.Gly148Arg,ExAC 1/76588; 0 hemizyg,,100% primates but missing in Saimiri,All tolerated; 0.03,0.0,Both acceptor and donor scores much reduced,
+10,Exon 5,BENIGN,X:153642523,X:154414186,c.456G>C,p.Glu152Asp,ExAC 1/73322; 0 hemizyg,,100% primates but missing in Saimiri & Callithrix,All tolerated; 0.006,0.006,Low acceptor score same; donor improved,
