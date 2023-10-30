@@ -1,0 +1,25 @@
+TODO:
+- fix 2-55 reference
+-----
+- for Location, sometimes there is space in the beginning, etc --- should be unified (compare with alphasense dataset where we have one column for chromosome and one for position)
+- for Location, it is not clear what data after - and _ mean, and also there is sometimes space, sometimes not...
+----
+- Protein Variant Type column should be also in benign. it is almost impossible to just parse all missense variants from benign sheet
+----
+- DNA modifications column is very difficult to parse. (E.g. compare with alpha missense dataset where we have just REF ALT)
+-> at least we should strip values, e.g. c.589G>A is sometimes with space, sometimes without, then we can't match it..
+
+---
+row 36 vs 35: same location 38, jina 37 --- check this automatically in all places
+----
+empty rows in benign sheet for hg38, e.g. 63/64
+---
+empty column in pathogenic sheet
+---
+better parsing of some columns:
+'PolyPhen2 prediction', # column not in df_pathogenic, but this info can be extracted from 'Method of Validation'
+'SIFT prediction', # column not in df_pathogenic, but this info can be extracted from 'Method of Validation'
+'Protein Variant Type', # only in df_pathogenic, should be added also to other sheets
+'References', # only in df_pathogenic, should be made consistent with other sheets, where similar column contains population frequency, see below
+'References & population frequency'] # not in df_pathogenic, see above
+'Splicing Prediction' # TODO why is this column not in pathogenic and vus?
