@@ -2,17 +2,17 @@ import ipynbname
 import os
 import datetime
 
-def create_database_output_path(folder='../database_versions'):
+def create_database_output_path_prefix(folder='../database_versions'):
     version_number = get_version_number()
-    output_file_name = create_database_output_file_name(version_number)
-    output_path = os.path.join(folder, output_file_name)
-    print(f'database output path: {output_path}')
-    return output_path
+    output_file_name_prefix = create_database_output_file_name_prefix(version_number)
+    output_path_prefix = os.path.join(folder, output_file_name_prefix)
+    print(f'database output path prefix: {output_path_prefix}')
+    return output_path_prefix
 
-def create_database_output_file_name(version_number):
+def create_database_output_file_name_prefix(version_number):
     now = str(datetime.datetime.now()).replace(':', '-').replace('.', '-').replace(' ', '-')
-    output_file_name = f'{version_number}_{now}_Human-TAFAZZIN-Variants-Database.xlsx'
-    return output_file_name
+    output_file_name_prefix = f'{version_number}_{now}_Human-TAFAZZIN-Variants-Database_'
+    return output_file_name_prefix
     
 def get_version_number(database_folder='../database_versions'):
     # get version number from current notebook name
