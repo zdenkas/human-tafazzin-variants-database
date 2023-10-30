@@ -1,4 +1,5 @@
-TODO:
+# Dataset cleaning:
+-------------------
 - fix 2-55 reference
 -----
 - for Location, sometimes there is space in the beginning, etc --- should be unified (compare with alphasense dataset where we have one column for chromosome and one for position)
@@ -10,7 +11,7 @@ TODO:
 -> at least we should strip values, e.g. c.589G>A is sometimes with space, sometimes without, then we can't match it..
 
 ---
-row 36 vs 35: same location 38, jina 37 --- check this automatically in all places
+row 36 vs 35: same location hg38, other hg37 --- check this automatically in all places
 ----
 empty rows in benign sheet for hg38, e.g. 63/64
 ---
@@ -23,3 +24,18 @@ better parsing of some columns:
 'References', # only in df_pathogenic, should be made consistent with other sheets, where similar column contains population frequency, see below
 'References & population frequency'] # not in df_pathogenic, see above
 'Splicing Prediction' # TODO why is this column not in pathogenic and vus?
+
+===== 
+# Dataset enhancements:
+-----------------------
+Add new publicly available data
+E.g. from Gnomad, TODO
+----
+Add clinical data accessible in papers
+E.g. [this paper](https://pubmed.ncbi.nlm.nih.gov/30226969/) contains clinical info and can be directly linked to the database
+---
+Add scores/info from new methods, such as Alpha Missense, Alphafold?
+---
+?? Find & add whole genomes
+- Public
+- Ask BSF
