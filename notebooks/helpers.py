@@ -2,17 +2,17 @@ import ipynbname
 import os
 import datetime
 
-def create_database_output_path(folder='../database_versions'):
+def create_database_output_path_prefix(folder='../database_versions'):
     version_number = get_version_number()
-    output_file_name = create_database_output_file_name(version_number)
-    output_path = os.path.join(folder, output_file_name)
-    print(f'database output path: {output_path}')
-    return output_path
+    output_file_name_prefix = create_database_output_file_name_prefix(version_number)
+    output_path_prefix = os.path.join(folder, output_file_name_prefix)
+    print(f'database output path prefix: {output_path_prefix}')
+    return output_path_prefix
 
-def create_database_output_file_name(version_number):
+def create_database_output_file_name_prefix(version_number):
     now = str(datetime.datetime.now()).replace(':', '-').replace('.', '-').replace(' ', '-')
-    output_file_name = f'{version_number}_{now}_Human-TAFAZZIN-Variants-Database.xlsx'
-    return output_file_name
+    output_file_name_prefix = f'{version_number}_{now}_Human-TAFAZZIN-Variants-Database_'
+    return output_file_name_prefix
     
 def get_version_number(database_folder='../database_versions'):
     # get version number from current notebook name
@@ -38,3 +38,18 @@ def get_version_number(database_folder='../database_versions'):
     assert version_number == sorted(notebook_prefixes)[-1], f'Version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all the notebooks in this folder, now the highest is {sorted(notebook_prefixes)[-1]} and version_number is {version_number}'
 
     return version_number
+
+def save_output_as_csv(output_path_prefix, 
+                       df_pathogenic, df_benign, df_vus, df_exon5):
+    df_pathogenic.to_csv(output_path_prefix + 'pathogenic.csv', index=False)
+    print(f'Dataframe of shape {df_pathogenic.shape} saved to {output_path_prefix}pathogenic.csv')
+        
+    df_benign.to_csv(output_path_prefix + 'benign.csv', index=False)
+    print(f'Dataframe of shape {df_benign.shape} saved to {output_path_prefix}benign.csv')
+
+    df_vus.to_csv(output_path_prefix + 'vus.csv', index=False)
+    print(f'Dataframe of shape {df_vus.shape} saved to {output_path_prefix}vus.csv')
+
+    df_exon5.to_csv(output_path_prefix + 'exon5.csv', index=False)
+    print(f'Dataframe of shape {df_exon5.shape} saved to {output_path_prefix}exon5.csv')
+    
