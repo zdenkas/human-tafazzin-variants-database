@@ -13,6 +13,8 @@
 ---
 row 36 vs 35: same location hg38, other hg37 --- check this automatically in all places
 ----
+cases when pathogenic mutations are not in Alpha missense --- are these mistakes in Tafazzin database?
+----
 empty rows in benign sheet for hg38, e.g. 63/64
 ---
 empty column in pathogenic sheet
