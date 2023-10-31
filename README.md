@@ -1,10 +1,8 @@
-# human-tafazzin-variants-database
+# Modifications of Human Tafazzin Variants Database
 
-Human Tafazzin Variants Database.
+This repository contains Python notebooks that fix inconsistencies in the [Human Tafazzin Variants Database](https://www.barthsyndrome.org/research/tafazzindatabase.html) and enhance the database with publicly available data.
 
-This repository contains Python notebooks that fix inconsistencies in the Human Tafazzin Variants Database and enhance the database with publicly available data.
-
-The official version of the Human Tafazzin Variants Database is currently available at https://drive.google.com/drive/folders/1O2MKa5FHsvq3hyjOVSsOZf37xkwKYAJ8 
+The official version of the Human Tafazzin Variants Database is currated by the Barth Syndrome Foundation and is currently available at https://drive.google.com/drive/folders/1O2MKa5FHsvq3hyjOVSsOZf37xkwKYAJ8 
 
 Folders:
 * notebooks:
