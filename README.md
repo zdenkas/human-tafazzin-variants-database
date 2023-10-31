@@ -1,6 +1,6 @@
 # human-tafazzin-variants-database
 
-Human Tafazzin Variants Database modifications.
+Human Tafazzin Variants Database.
 
 This repository contains Python notebooks that fix inconsistencies in the Human Tafazzin Variants Database and enhance the database with publicly available data.
 
@@ -14,6 +14,6 @@ Folders:
 * database_versions:
     * Versions of the database. They contain a timestamp in their name and can be matched to corresponding notebooks with the number before the underscore. (E.g., notebook 0000_xxx.ipynb generated databases (csv files) `0000_some-timestamp_Human-TAFAZZIN-Variants-Database_pathogenic.csv`, `0000_some-timestamp_Human-TAFAZZIN-Variants-Database_benign.csv`, ...)
     * The latest version is the one with the highest number.
- 
+ * [TODOs](https://github.com/zdenkas/human-tafazzin-variants-database/blob/main/TODO.txt)
 
   If you have any questions, feel free to contact me at zdenka@sedenka.cz, or create an issue. 
