@@ -2,7 +2,7 @@ import ipynbname
 import os
 import datetime
 
-def create_database_output_path_prefix(folder='../database_versions'):
+def create_database_output_path_prefix(folder='../intermediate_pipeline_db_versions'):
     version_number = get_version_number()
     output_file_name_prefix = create_database_output_file_name_prefix(version_number)
     output_path_prefix = os.path.join(folder, output_file_name_prefix)
@@ -14,7 +14,7 @@ def create_database_output_file_name_prefix(version_number):
     output_file_name_prefix = f'{version_number}_{now}_Human-TAFAZZIN-Variants-Database_'
     return output_file_name_prefix
     
-def get_version_number(database_folder='../database_versions'):
+def get_version_number(database_folder='../intermediate_pipeline_db_versions'):
     # get version number from current notebook name
     nb_fname = ipynbname.name()
     version_number = nb_fname.split('_')[0]
