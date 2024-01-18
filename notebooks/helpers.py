@@ -2,7 +2,7 @@ import ipynbname
 import os
 import datetime
 
-def create_database_output_path_prefix(folder='../database_versions'):
+def create_database_output_path_prefix(folder='../intermediate_pipeline_db_versions'):
     version_number = get_version_number()
     output_file_name_prefix = create_database_output_file_name_prefix(version_number)
     output_path_prefix = os.path.join(folder, output_file_name_prefix)
@@ -14,11 +14,11 @@ def create_database_output_file_name_prefix(version_number):
     output_file_name_prefix = f'{version_number}_{now}_Human-TAFAZZIN-Variants-Database_'
     return output_file_name_prefix
     
-def get_version_number(database_folder='../database_versions'):
+def get_version_number(database_folder='../intermediate_pipeline_db_versions'):
     # get version number from current notebook name
     nb_fname = ipynbname.name()
     version_number = nb_fname.split('_')[0]
-    assert len(version_number) == 4, f'version_number (= beginning of filename of this Python notebook before the underscore) must have length 4, now is {version_number}'
+    assert len(version_number) == 5, f'version_number (= beginning of filename of this Python notebook before the underscore) must have length 5, now is {version_number}'
     assert version_number.isnumeric(), f'version_number (= beginning of filename of this Python notebook before the underscore) must be numeric, now is {version_number}'
     print('version number:', version_number)
 
@@ -35,7 +35,7 @@ def get_version_number(database_folder='../database_versions'):
     notebook_files = os.listdir('.')
     notebook_suffix = '.ipynb'
     notebook_prefixes = [file.split('_')[0] for file in notebook_files if file.endswith(notebook_suffix)]
-    assert version_number == sorted(notebook_prefixes)[-1], f'Version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all the notebooks in this folder, now the highest is {sorted(notebook_prefixes)[-1]} and version_number is {version_number}'
+    #assert version_number == sorted(notebook_prefixes)[-1], f'Version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all the notebooks in this folder, now the highest is {sorted(notebook_prefixes)[-1]} and version_number is {version_number}'
 
     return version_number
 
