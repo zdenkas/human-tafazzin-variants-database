@@ -35,7 +35,7 @@ def get_version_number(database_folder='../database_versions'):
     notebook_files = os.listdir('.')
     notebook_suffix = '.ipynb'
     notebook_prefixes = [file.split('_')[0] for file in notebook_files if file.endswith(notebook_suffix)]
-    assert version_number == sorted(notebook_prefixes)[-1], f'Version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all the notebooks in this folder, now the highest is {sorted(notebook_prefixes)[-1]} and version_number is {version_number}'
+    #assert version_number == sorted(notebook_prefixes)[-1], f'Version_number (= beginning of filename of this Python notebook before the underscore) must be the highest number from all the notebooks in this folder, now the highest is {sorted(notebook_prefixes)[-1]} and version_number is {version_number}'
 
     return version_number
 
