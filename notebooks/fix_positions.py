@@ -20,7 +20,6 @@ def find_unexpected_letters_on_38_position(taz_database_38_loc,
     dna_modifications : str
         DNA modifications field from TAZ database, e.g. c.51G>A     
 
-    
     taz_positions : pandas dataframe
         TAZ positions from ensembl.org in hg38, loaded by `load_taz_positions`. 
     
@@ -44,7 +43,6 @@ def find_unexpected_letters_on_38_position(taz_database_38_loc,
         pos_in_sequence = taz_database_38_loc - start_from_taz_positions
         expected_letter = sequence[pos_in_sequence]
         
-
         dna_modifications_split = dna_modifications.split('>')
         assert len(dna_modifications_split) >= 2, f'problem with split for {dna_modifications}; {dna_modifications_split}'
 
