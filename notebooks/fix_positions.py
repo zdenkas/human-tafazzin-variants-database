@@ -25,8 +25,15 @@ def find_unexpected_letters_on_38_position(taz_database_38_loc,
     
     taz_sequences_path : str
         Path to TAZ sequences from ensembl.org
-        
-    """
+
+    Returns
+    -------
+    tuple
+        A tuple containing two elements:
+        - unexpected: A string describing the unexpected letter, if any. None if no unexpected letter is found.
+        - weird_split: A string describing any issues with the split operation on the 'dna_modifications' string. None if no issues are found.
+    """ 
+    
     weird_split = None
     unexpected = None
     
