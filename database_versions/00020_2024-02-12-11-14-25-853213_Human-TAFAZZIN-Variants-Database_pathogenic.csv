@@ -129,7 +129,7 @@ Intron 3,X:153641699,X:154413362,Splicing/Insertion,,c.284+110G>A,r.[284+1_+111]
 Intron 3,X:153641818,X:154413481,Splicing,,c.285-1G>C,r.spl,,,,Ref. 98,,,3-f,,
 Exon 4,X:153641819,X:154413482,Nonsense,,c.285G>A     TGG > TGA,p.Trp95*,,,,Ref. 4,,,4-1,,
 Exon 4,X:153641828,X:154413491,Frameshift,,c.293_294insTTAGGACCCC ,p.AlaA99*  (p.Ala99_Ala100insTer),,,,Ref. 15;  Ref. 20; Ref.4; Ref.83; Ref. 133,ClinVar,SCN5A  c.1673A>G; genotype G/G; p.His558Arg VUS or Benign,4-2 & 4-39,,
-Exon 4,X:153641836,X:154413499,Missense,,c.302A>T,p.Asp101Tyr,CL reduced,,SIFT 0;  PPH 0.64,Ref. 23 (Pat. 5) ,,,4-3,,
+Exon 4,X:153641836,X:154413499,Missense,,c.302A>T,p.Asp101Val,CL reduced,,SIFT 0;  PPH 0.64,Ref. 23 (Pat. 5) ,,,4-3,,
 Exon 4,X:153641836,X:154413499,Missense,,c.302A>T   ,p.Asp101Val,,,SIFT 0;  PPH 0.64,Ref. 4 ,,,4-4,,
 Exon 4,X:153641841,X:154413504,Missense,,c.307T>C   ,p.Cys103Arg ,,,SIFT 0; PPH 0.877,Ref. 83 ,ClinVar Jun 2012,"MYH7 NM_000257 c.5588G>A Arg1863Gln Likely path,  rs45520836  ",4-5,,
 Exon 4,X:153641844,X:154413507,Missense,,c.310T>G  ,p.Phe104Val,,,SIFT 0;  PPH 0.82,Ref. 4  ,,,4-6,,
