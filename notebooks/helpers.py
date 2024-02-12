@@ -16,7 +16,11 @@ def create_database_output_file_name_prefix(version_number):
     
 def get_version_number(database_folder='../intermediate_pipeline_db_versions'):
     # get version number from current notebook name
-    nb_fname = ipynbname.name()
+    try:
+        nb_fname = ipynbname.name()
+    except FileNotFoundError:
+         # VS code workaround
+         nb_fname = os.path.basename(globals()['__vsc_ipynb_file__'])
     version_number = nb_fname.split('_')[0]
     assert len(version_number) == 5, f'version_number (= beginning of filename of this Python notebook before the underscore) must have length 5, now is {version_number}'
     assert version_number.isnumeric(), f'version_number (= beginning of filename of this Python notebook before the underscore) must be numeric, now is {version_number}'

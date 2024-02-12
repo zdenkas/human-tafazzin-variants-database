@@ -2,3 +2,5 @@ database_original
 *.ipynb_checkpoints*
 *__pycache__*
 intermediate_pipeline_db_versions
+*.DS_Store
+*.idea/*
